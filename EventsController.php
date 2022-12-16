@@ -10,9 +10,6 @@ class EventsController extends Controller
 {
     public function index()
     {
-        $allCategories = ['Category 1', 'Category 2'];
-        $allEvents = Events::all();
-
         return Response::json(Events::all());
     }
 
